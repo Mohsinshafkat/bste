@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificate Verification – BSTE Pakistan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════ NAVBAR -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">B</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-title">BSTE</span>
+        <span class="nav-logo-sub">Pakistan</span>
+      </div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" onclick="closeMenu()">Home</a>
+      <a href="index.html#academic-scope" onclick="closeMenu()">Academic Scope</a>
+      <a href="verification.html" class="active" onclick="closeMenu()">Verification</a>
+      <a href="index.html#about-us" onclick="closeMenu()">About Us</a>
+      <a href="verification.html" class="nav-btn-verify" onclick="closeMenu()">🔍 Verify Certificate</a>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════ TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-label">📢 Notifications</div>
+  <div class="ticker-track">
+    <div class="ticker-content">
+      <span>Admissions open for all technical diploma programs — Apply now at registered institutes</span>
+      <span>Certificate verification portal is live — Verify your credentials online instantly</span>
+      <span>BSTE has accredited 150+ technical training partners across Pakistan</span>
+      <span>New batch enrollment for Advanced DAE programs starting July 2025</span>
+      <span>Results of Annual Technical Examination 2025 have been announced — Check your result online</span>
+      <span>BSTE is expanding its accreditation network to rural districts of Sindh and Punjab</span>
+      <span>ISO-aligned curriculum frameworks now adopted across all affiliated institutes</span>
+      <span>Admissions open for all technical diploma programs — Apply now at registered institutes</span>
+      <span>Certificate verification portal is live — Verify your credentials online instantly</span>
+      <span>BSTE has accredited 150+ technical training partners across Pakistan</span>
+      <span>New batch enrollment for Advanced DAE programs starting July 2025</span>
+      <span>Results of Annual Technical Examination 2025 have been announced — Check your result online</span>
+      <span>BSTE is expanding its accreditation network to rural districts of Sindh and Punjab</span>
+      <span>ISO-aligned curriculum frameworks now adopted across all affiliated institutes</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ VERIFY HERO -->
+<section class="verify-hero">
+  <div class="verify-card">
+    <div class="verify-card-header">
+      <div class="icon-shield">🛡️</div>
+      <h2>Certificate Verification</h2>
+      <p>Enter the student's Roll Number and Passing Year to verify the authenticity of a BSTE-issued credential.</p>
+    </div>
+
+    <div class="form-group">
+      <label for="rollInput">Roll Number</label>
+      <input
+        type="text"
+        id="rollInput"
+        placeholder="e.g. 100448"
+        autocomplete="off"
+        spellcheck="false"
+        inputmode="numeric"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="yearSelect">Passing Year</label>
+      <div class="select-wrapper">
+        <select id="yearSelect">
+          <option value="" disabled selected>— Select Year —</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="btn-verify-submit" onclick="verifyStudent()">
+      🔍 Verify Now
+    </button>
+
+    <div class="verify-error" id="verifyError">
+      ⚠️ No record found. Please check the Roll Number and Passing Year.
+    </div>
+
+    <div class="verify-info">
+      <div class="verify-info-icon">🔒</div>
+      <p>This portal is secured and maintained by BSTE Pakistan. All certificate data is official and tamper-proof. For disputes contact <strong>info.bste.com.pk</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ FOOTER -->
+<footer class="footer" id="about-us">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="nav-logo" style="margin-bottom:16px;">
+        <div class="nav-logo-icon">B</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-title">BSTE</span>
+          <span class="nav-logo-sub">Pakistan</span>
+        </div>
+      </div>
+      <p>The Board of Science &amp; Technology Education (BSTE) is Pakistan's authoritative body for standardizing technical and scientific curricula, issuing recognized credentials, and accrediting vocational training institutes across the country.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#academic-scope">Academic Scope</a></li>
+        <li><a href="verification.html">Certificate Verification</a></li>
+        <li><a href="index.html#about-us">About BSTE</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <ul>
+        <li><a href="index.html#academic-scope">Civil Engineering</a></li>
+        <li><a href="index.html#academic-scope">IT &amp; Computing</a></li>
+        <li><a href="index.html#academic-scope">Electrical Technology</a></li>
+        <li><a href="index.html#academic-scope">Telecommunications</a></li>
+        <li><a href="index.html#academic-scope">Healthcare Technology</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon">📍</div>
+        <div class="footer-contact-text">Board of Science &amp; Technology Education, Pakistan</div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon">✉️</div>
+        <div class="footer-contact-text">info.bste.com.pk</div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon">🌐</div>
+        <div class="footer-contact-text">www.bste.com.pk</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Board of Science &amp; Technology Education (BSTE) — Pakistan. All rights reserved.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="verification.html">Verify Certificate</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ══════════════════════════════════════════════════════════════
+     STUDENT DATABASE
+     Add more entries below following the same object structure.
+     ══════════════════════════════════════════════════════════════ */
+  const students = [
+    { roll: "100448", year: "2025", name: "BILAL AZIZ",       father: "ABDUL MAJEED",   reg: "BSTE/TEC/100448", course: "DAE (TELECOMMUNICATION TECHNOLOGY)",  total: "3200", obt: "1506", per: "47.06%", grade: "D" },
+    { roll: "100449", year: "2025", name: "IRFAN ASLAM",      father: "SHOUKAT ALI",    reg: "BSTE/TEC/100449", course: "WEB DESIGN & DEVELOPMENT",            total: "1000", obt: "410",  per: "41.00%", grade: "D" },
+    { roll: "100450", year: "2025", name: "AHMED RAZA",       father: "GHULAM RAZA",    reg: "BSTE/TEC/100450", course: "CIVIL & ARCHITECTURE TECHNOLOGY",     total: "2400", obt: "1320", per: "55.00%", grade: "C" },
+    { roll: "100451", year: "2025", name: "SANA FATIMA",      father: "MUHAMMAD TARIQ", reg: "BSTE/TEC/100451", course: "INFORMATION TECHNOLOGY (DIT)",        total: "1200", obt: "780",  per: "65.00%", grade: "B" },
+    { roll: "100452", year: "2025", name: "USMAN KHALID",     father: "KHALID MEHMOOD", reg: "BSTE/TEC/100452", course: "ELECTRICAL TECHNOLOGY",               total: "2800", obt: "1960", per: "70.00%", grade: "A" },
+    /* ── Add more students below this line ── */
+  ];
+
+  function verifyStudent() {
+    const roll  = document.getElementById('rollInput').value.trim();
+    const year  = document.getElementById('yearSelect').value;
+    const errEl = document.getElementById('verifyError');
+
+    errEl.style.display = 'none';
+
+    if (!roll || !year) {
+      errEl.textContent = '⚠️ Please enter both Roll Number and Passing Year.';
+      errEl.style.display = 'block';
+      return;
+    }
+
+    const match = students.find(s => s.roll === roll && s.year === year);
+
+    if (!match) {
+      errEl.textContent = '⚠️ No record found. Please check the Roll Number and Passing Year.';
+      errEl.style.display = 'block';
+      return;
+    }
+
+    /* Encode student data into query params and open result page */
+    const params = new URLSearchParams({
+      roll:   match.roll,
+      year:   match.year,
+      name:   match.name,
+      father: match.father,
+      reg:    match.reg,
+      course: match.course,
+      total:  match.total,
+      obt:    match.obt,
+      per:    match.per,
+      grade:  match.grade
+    });
+    window.location.href = 'result.html?' + params.toString();
+  }
+
+  /* Allow Enter key on roll input */
+  document.getElementById('rollInput').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') verifyStudent();
+  });
+
+  function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
+  function closeMenu()  { document.getElementById('navLinks').classList.remove('open'); }
+</script>
+
+</body>
+</html>

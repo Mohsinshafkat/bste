@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Result – BSTE Pakistan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════ NAVBAR -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">B</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-title">BSTE</span>
+        <span class="nav-logo-sub">Pakistan</span>
+      </div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" onclick="closeMenu()">Home</a>
+      <a href="index.html#academic-scope" onclick="closeMenu()">Academic Scope</a>
+      <a href="verification.html" onclick="closeMenu()">Verification</a>
+      <a href="index.html#about-us" onclick="closeMenu()">About Us</a>
+      <a href="verification.html" class="nav-btn-verify" onclick="closeMenu()">🔍 Verify Certificate</a>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════ TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-label">📢 Notifications</div>
+  <div class="ticker-track">
+    <div class="ticker-content">
+      <span>Admissions open for all technical diploma programs — Apply now at registered institutes</span>
+      <span>Certificate verification portal is live — Verify your credentials online instantly</span>
+      <span>BSTE has accredited 150+ technical training partners across Pakistan</span>
+      <span>New batch enrollment for Advanced DAE programs starting July 2025</span>
+      <span>Results of Annual Technical Examination 2025 have been announced — Check your result online</span>
+      <span>BSTE is expanding its accreditation network to rural districts of Sindh and Punjab</span>
+      <span>ISO-aligned curriculum frameworks now adopted across all affiliated institutes</span>
+      <span>Admissions open for all technical diploma programs — Apply now at registered institutes</span>
+      <span>Certificate verification portal is live — Verify your credentials online instantly</span>
+      <span>BSTE has accredited 150+ technical training partners across Pakistan</span>
+      <span>New batch enrollment for Advanced DAE programs starting July 2025</span>
+      <span>Results of Annual Technical Examination 2025 have been announced — Check your result online</span>
+      <span>BSTE is expanding its accreditation network to rural districts of Sindh and Punjab</span>
+      <span>ISO-aligned curriculum frameworks now adopted across all affiliated institutes</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ RESULT PAGE -->
+<div class="result-page-bg" id="resultBg">
+
+  <!-- Top action buttons -->
+  <div class="result-actions-top">
+    <a href="verification.html" class="btn-action btn-action-outline">← New Search</a>
+    <button class="btn-action btn-action-gold" onclick="downloadPDF()">⬇ Download PDF</button>
+  </div>
+
+  <!-- A4 Result Document -->
+  <div class="result-document" id="resultDocument">
+
+    <!-- Watermark -->
+    <div class="result-watermark">BSTE</div>
+
+    <!-- Document Header -->
+    <div class="result-doc-header">
+      <div class="result-doc-logo-area">
+        <div class="result-doc-logo-box">B</div>
+        <div class="result-doc-org-name">
+          <h3>BOARD OF SCIENCE &amp; TECHNOLOGY EDUCATION</h3>
+          <span>Official Result Document — Pakistan</span>
+        </div>
+      </div>
+      <div class="result-doc-title-area">
+        <h2>Certificate Verification</h2>
+        <span id="docIssueDate">Issued: —</span>
+      </div>
+    </div>
+
+    <!-- Document Body -->
+    <div class="result-doc-body">
+
+      <!-- Student name bar -->
+      <div class="result-student-name-bar">
+        <div class="student-name-text">
+          <h3 id="studentName">—</h3>
+          <span id="studentFather">S/O —</span>
+        </div>
+        <div class="grade-badge" id="gradeBadge">—</div>
+      </div>
+
+      <!-- Details grid -->
+      <div class="result-details-grid">
+        <div class="result-field">
+          <div class="result-field-label">Roll Number</div>
+          <div class="result-field-value" id="dRoll">—</div>
+        </div>
+        <div class="result-field">
+          <div class="result-field-label">Registration No.</div>
+          <div class="result-field-value" id="dReg">—</div>
+        </div>
+        <div class="result-field" style="grid-column:1/-1;">
+          <div class="result-field-label">Program / Course</div>
+          <div class="result-field-value" id="dCourse">—</div>
+        </div>
+        <div class="result-field">
+          <div class="result-field-label">Passing Year</div>
+          <div class="result-field-value" id="dYear">—</div>
+        </div>
+        <div class="result-field">
+          <div class="result-field-label">Issuing Authority</div>
+          <div class="result-field-value">BSTE Pakistan</div>
+        </div>
+      </div>
+
+      <!-- Marks table -->
+      <table class="result-marks-table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Marks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Total Marks</td>
+            <td id="dTotal">—</td>
+          </tr>
+          <tr>
+            <td>Obtained Marks</td>
+            <td id="dObt">—</td>
+          </tr>
+          <tr>
+            <td>Percentage</td>
+            <td id="dPer">—</td>
+          </tr>
+          <tr>
+            <td>Grade</td>
+            <td id="dGrade">—</td>
+          </tr>
+          <tr>
+            <td>Result Status</td>
+            <td style="color:var(--green-main);font-weight:800;">PASS ✓</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Percentage bar -->
+      <div class="result-percentage-bar">
+        <div class="bar-label">
+          <span>Performance</span>
+          <span id="barLabel">—</span>
+        </div>
+        <div class="bar-track">
+          <div class="bar-fill" id="barFill" style="width:0%"></div>
+        </div>
+      </div>
+
+      <!-- QR + Stamp row -->
+      <div class="result-qr-row">
+        <div class="result-qr-box">
+          <img
+            id="qrImage"
+            src="https://raw.githubusercontent.com/Mohsinshafkat/bste.com.pk/main/resultqr.png"
+            alt="Verification QR Code"
+            onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=BSTE-VERIFIED'"
+          />
+          <div class="result-qr-text">
+            <strong>Scan to Verify</strong>
+            Scan QR code to confirm<br/>
+            document authenticity online.
+          </div>
+        </div>
+        <div class="result-verify-stamp">
+          <div class="stamp-box">✔ VERIFIED</div>
+          <div style="font-size:0.72rem;color:var(--text-muted);margin-top:4px;">Digitally Authenticated</div>
+        </div>
+      </div>
+
+    </div><!-- /result-doc-body -->
+
+    <!-- Document Footer -->
+    <div class="result-doc-footer">
+      <span>📧 info.bste.com.pk</span>
+      <span>Board of Science &amp; Technology Education — Pakistan</span>
+      <span id="footerDate">—</span>
+    </div>
+
+  </div><!-- /result-document -->
+
+  <!-- Bottom action buttons (mobile-friendly duplicate) -->
+  <div class="result-actions-top" style="margin-top:20px;">
+    <a href="verification.html" class="btn-action btn-action-outline">← New Search</a>
+    <button class="btn-action btn-action-gold" onclick="downloadPDF()">⬇ Download PDF</button>
+  </div>
+
+</div><!-- /result-page-bg -->
+
+<!-- ═══════════════════════════════════════════ FOOTER -->
+<footer class="footer" id="about-us">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="nav-logo" style="margin-bottom:16px;">
+        <div class="nav-logo-icon">B</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-title">BSTE</span>
+          <span class="nav-logo-sub">Pakistan</span>
+        </div>
+      </div>
+      <p>The Board of Science &amp; Technology Education (BSTE) is Pakistan's authoritative body for standardizing technical and scientific curricula, issuing recognized credentials, and accrediting vocational training institutes across the country.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#academic-scope">Academic Scope</a></li>
+        <li><a href="verification.html">Certificate Verification</a></li>
+        <li><a href="index.html#about-us">About BSTE</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <ul>
+        <li><a href="index.html#academic-scope">Civil Engineering</a></li>
+        <li><a href="index.html#academic-scope">IT &amp; Computing</a></li>
+        <li><a href="index.html#academic-scope">Electrical Technology</a></li>
+        <li><a href="index.html#academic-scope">Telecommunications</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon">📍</div>
+        <div class="footer-contact-text">Board of Science &amp; Technology Education, Pakistan</div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon">✉️</div>
+        <div class="footer-contact-text">info.bste.com.pk</div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon">🌐</div>
+        <div class="footer-contact-text">www.bste.com.pk</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Board of Science &amp; Technology Education (BSTE) — Pakistan. All rights reserved.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="verification.html">Verify Certificate</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ══════════════════════════════════════════════════════════════
+     GITHUB REPOSITORY CONFIGURATION
+     Replace with your actual GitHub username and repository name.
+     ══════════════════════════════════════════════════════════════ */
+  const GITHUB_USER = "Mohsinshafkat";
+  const GITHUB_REPO = "bste.com.pk";
+  const GITHUB_BRANCH = "main";
+
+  /* Build raw GitHub URL for a file */
+  function githubRaw(path) {
+    return `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/${path}`;
+  }
+
+  /* ── Parse query params ── */
+  const params = new URLSearchParams(window.location.search);
+
+  const roll   = params.get('roll')   || '—';
+  const year   = params.get('year')   || '—';
+  const name   = params.get('name')   || '—';
+  const father = params.get('father') || '—';
+  const reg    = params.get('reg')    || '—';
+  const course = params.get('course') || '—';
+  const total  = params.get('total')  || '—';
+  const obt    = params.get('obt')    || '—';
+  const per    = params.get('per')    || '—';
+  const grade  = params.get('grade')  || '—';
+
+  /* If no params (direct URL access), redirect to verification */
+  if (roll === '—') {
+    window.location.href = 'verification.html';
+  }
+
+  /* ── Populate fields ── */
+  document.getElementById('studentName').textContent   = name;
+  document.getElementById('studentFather').textContent = 'S/O ' + father;
+  document.getElementById('gradeBadge').textContent    = grade;
+  document.getElementById('dRoll').textContent         = roll;
+  document.getElementById('dReg').textContent          = reg;
+  document.getElementById('dCourse').textContent       = course;
+  document.getElementById('dYear').textContent         = year;
+  document.getElementById('dTotal').textContent        = total;
+  document.getElementById('dObt').textContent          = obt;
+  document.getElementById('dPer').textContent          = per;
+  document.getElementById('dGrade').textContent        = grade;
+  document.getElementById('barLabel').textContent      = per;
+
+  /* ── Progress bar ── */
+  const pctNum = parseFloat(per);
+  if (!isNaN(pctNum)) {
+    setTimeout(() => {
+      document.getElementById('barFill').style.width = Math.min(pctNum, 100) + '%';
+    }, 300);
+  }
+
+  /* ── Dates ── */
+  const today = new Date().toLocaleDateString('en-PK', { day:'2-digit', month:'long', year:'numeric' });
+  document.getElementById('docIssueDate').textContent = 'Verified: ' + today;
+  document.getElementById('footerDate').textContent   = today;
+
+  /* ── QR Image (GitHub raw) ── */
+  document.getElementById('qrImage').src = githubRaw('resultqr.png');
+
+  /* ── Download PDF from GitHub Students folder ── */
+  function downloadPDF() {
+    const pdfUrl = githubRaw(`students/${roll}.pdf`);
+    const a = document.createElement('a');
+    a.href = pdfUrl;
+    a.download = `BSTE_Certificate_${roll}.pdf`;
+    a.target = '_blank';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
+
+  /* ── Nav helpers ── */
+  function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
+  function closeMenu()  { document.getElementById('navLinks').classList.remove('open'); }
+</script>
+
+</body>
+</html>

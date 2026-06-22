@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BSTE – Board of Science &amp; Technology Education</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════ NAVBAR -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">B</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-title">BSTE</span>
+        <span class="nav-logo-sub">Pakistan</span>
+      </div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" class="active" onclick="closeMenu()">Home</a>
+      <a href="#academic-scope" onclick="closeMenu()">Academic Scope</a>
+      <a href="verification.html" onclick="closeMenu()">Verification</a>
+      <a href="#about-us" onclick="closeMenu()">About Us</a>
+      <a href="verification.html" class="nav-btn-verify" onclick="closeMenu()">🔍 Verify Certificate</a>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════ TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-label">📢 Notifications</div>
+  <div class="ticker-track">
+    <div class="ticker-content">
+      <span>Admissions open for all technical diploma programs — Apply now at registered institutes</span>
+      <span>Certificate verification portal is live — Verify your credentials online instantly</span>
+      <span>BSTE has accredited 150+ technical training partners across Pakistan</span>
+      <span>New batch enrollment for Advanced DAE programs starting July 2025</span>
+      <span>Results of Annual Technical Examination 2025 have been announced — Check your result online</span>
+      <span>BSTE is expanding its accreditation network to rural districts of Sindh and Punjab</span>
+      <span>ISO-aligned curriculum frameworks now adopted across all affiliated institutes</span>
+      <span>Admissions open for all technical diploma programs — Apply now at registered institutes</span>
+      <span>Certificate verification portal is live — Verify your credentials online instantly</span>
+      <span>BSTE has accredited 150+ technical training partners across Pakistan</span>
+      <span>New batch enrollment for Advanced DAE programs starting July 2025</span>
+      <span>Results of Annual Technical Examination 2025 have been announced — Check your result online</span>
+      <span>BSTE is expanding its accreditation network to rural districts of Sindh and Punjab</span>
+      <span>ISO-aligned curriculum frameworks now adopted across all affiliated institutes</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ HOME / HERO -->
+<section id="home" class="hero page-top-offset">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Board of Science &amp; Technology Education</div>
+    <h1 class="hero-title">
+      Standardizing <span class="accent">Global Technical</span><br/>
+      &amp; Scientific Education
+    </h1>
+    <p class="hero-sub">
+      Pakistan's premier technical credentialing authority — bridging industry-grade skills with internationally recognized certification standards across 100+ specialized programs.
+    </p>
+    <div class="hero-cta-row">
+      <a href="verification.html" class="btn-primary">🔍 Verify Certificate</a>
+      <a href="#academic-scope" class="btn-outline">Explore Programs ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ STATS STRIP -->
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-num">25K+</div>
+      <div class="stat-label">Verified Credentials</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">150+</div>
+      <div class="stat-label">Technical Partners</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">Gold</div>
+      <div class="stat-label">Operational Excellence</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">600+</div>
+      <div class="stat-label">Advanced Programs</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ ACADEMIC SCOPE -->
+<section id="academic-scope" class="academic-section section-pad">
+  <div class="container">
+    <div class="academic-header">
+      <div class="section-label">Academic Architecture</div>
+      <h2 class="section-title">Curriculum Frameworks Engineered for<br/>International Industrial Standards</h2>
+      <p class="section-desc">
+        Curriculum frameworks engineered to meet international industrial certification standards — each field aligned with global competency benchmarks and sector-specific skill matrices.
+      </p>
+    </div>
+
+    <div class="programs-grid">
+
+      <!-- 1. Construction & Civil Engineering -->
+      <div class="program-card">
+        <img
+          class="program-card-img"
+          src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Construction & Civil Engineering"
+          loading="lazy"
+        />
+        <div class="program-card-body">
+          <span class="program-card-tag">Civil</span>
+          <h3 class="program-card-title">Construction &amp; Civil Engineering</h3>
+          <p class="program-card-desc">Covers structural drafting, surveying, road laboratory work, construction site management, building inspection, and AutoCAD-based design — preparing graduates for infrastructure development roles.</p>
+        </div>
+      </div>
+
+      <!-- 2. Electrical & Electronics Technology -->
+      <div class="program-card">
+        <img
+          class="program-card-img"
+          src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Electrical & Electronics Technology"
+          loading="lazy"
+        />
+        <div class="program-card-body">
+          <span class="program-card-tag">Electrical</span>
+          <h3 class="program-card-title">Electrical &amp; Electronics Technology</h3>
+          <p class="program-card-desc">Programs spanning industrial electrician training, electronics engineering, CCTV systems, electro-mechanical engineering, and heavy equipment auto-electrics for the energy and manufacturing sectors.</p>
+        </div>
+      </div>
+
+      <!-- 3. Information Technology & Computing -->
+      <div class="program-card">
+        <img
+          class="program-card-img"
+          src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Information Technology & Computing"
+          loading="lazy"
+        />
+        <div class="program-card-body">
+          <span class="program-card-tag">IT / Computing</span>
+          <h3 class="program-card-title">Information Technology &amp; Computing</h3>
+          <p class="program-card-desc">From networking certifications (CCNA, CCNP, CCIE) to software engineering, database management, web engineering, and freelancing diplomas — equipping graduates for Pakistan's growing digital economy.</p>
+        </div>
+      </div>
+
+      <!-- 4. Telecommunications & Networking -->
+      <div class="program-card">
+        <img
+          class="program-card-img"
+          src="https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Telecommunications & Networking"
+          loading="lazy"
+        />
+        <div class="program-card-body">
+          <span class="program-card-tag">Telecom</span>
+          <h3 class="program-card-title">Telecommunications &amp; Networking</h3>
+          <p class="program-card-desc">Specialized tracks in optical fiber systems, telecom technician certification, wireless technology, and system engineering — developed in alignment with Pakistan's telecom sector growth roadmap.</p>
+        </div>
+      </div>
+
+      <!-- 5. Mechanical & Automotive Engineering -->
+      <div class="program-card">
+        <img
+          class="program-card-img"
+          src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Mechanical & Automotive Engineering"
+          loading="lazy"
+        />
+        <div class="program-card-body">
+          <span class="program-card-tag">Mechanical</span>
+          <h3 class="program-card-title">Mechanical &amp; Automotive Engineering</h3>
+          <p class="program-card-desc">Auto mechanic (diesel), auto electrician, automobile engineering, steel fixing, welding technology, and production engineering programs designed for workshop, manufacturing, and automotive industry careers.</p>
+        </div>
+      </div>
+
+      <!-- 6. Health, Safety & Environmental -->
+      <div class="program-card">
+        <img
+          class="program-card-img"
+          src="https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Health Safety & Environment"
+          loading="lazy"
+        />
+        <div class="program-card-body">
+          <span class="program-card-tag">HSE</span>
+          <h3 class="program-card-title">Health, Safety &amp; Environment</h3>
+          <p class="program-card-desc">Comprehensive HSE programs covering safety officer/inspector/supervisor certifications, fire management, environmental engineering, and sanitation inspection — meeting OSHA-aligned standards.</p>
+        </div>
+      </div>
+
+      <!-- 7. Media, Communication & Journalism -->
+      <div class="program-card">
+        <img
+          class="program-card-img"
+          src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Media Communication & Journalism"
+          loading="lazy"
+        />
+        <div class="program-card-body">
+          <span class="program-card-tag">Media</span>
+          <h3 class="program-card-title">Media, Communication &amp; Journalism</h3>
+          <p class="program-card-desc">Diploma programs in mass communication, TV news reporting, video production, public relations, media literacy, and journalism management — preparing graduates for Pakistan's evolving media landscape.</p>
+        </div>
+      </div>
+
+      <!-- 8. International Relations & Law -->
+      <div class="program-card">
+        <img
+          class="program-card-img"
+          src="https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="International Relations & Law"
+          loading="lazy"
+        />
+        <div class="program-card-body">
+          <span class="program-card-tag">International</span>
+          <h3 class="program-card-title">International Relations &amp; Law</h3>
+          <p class="program-card-desc">Specialized short-course diplomas in foreign policy, international law, diplomacy, international trading, and Pakistan's foreign relations — tailored for government, NGO, and diplomatic sector entry.</p>
+        </div>
+      </div>
+
+      <!-- 9. Fashion, Design & Creative Arts -->
+      <div class="program-card">
+        <img
+          class="program-card-img"
+          src="https://images.pexels.com/photos/3965545/pexels-photo-3965545.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Fashion Design & Creative Arts"
+          loading="lazy"
+        />
+        <div class="program-card-body">
+          <span class="program-card-tag">Creative</span>
+          <h3 class="program-card-title">Fashion, Design &amp; Creative Arts</h3>
+          <p class="program-card-desc">Courses in fashion designing, interior decoration, dress making, furniture &amp; wood working, and professional photography — supporting Pakistan's textile and creative industries with credentialed artisans.</p>
+        </div>
+      </div>
+
+      <!-- 10. Energy, Oil & Gas Technology -->
+      <div class="program-card">
+        <img
+          class="program-card-img"
+          src="https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Energy Oil & Gas Technology"
+          loading="lazy"
+        />
+        <div class="program-card-body">
+          <span class="program-card-tag">Energy</span>
+          <h3 class="program-card-title">Energy, Oil &amp; Gas Technology</h3>
+          <p class="program-card-desc">Petroleum engineering, oil &amp; gas technology, solar energy, HVAC maintenance, and refrigeration &amp; air conditioning programs aligned with Pakistan's expanding energy sector requirements.</p>
+        </div>
+      </div>
+
+      <!-- 11. Healthcare & Medical Technology -->
+      <div class="program-card">
+        <img
+          class="program-card-img"
+          src="https://images.pexels.com/photos/3938022/pexels-photo-3938022.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Healthcare & Medical Technology"
+          loading="lazy"
+        />
+        <div class="program-card-body">
+          <span class="program-card-tag">Healthcare</span>
+          <h3 class="program-card-title">Healthcare &amp; Medical Technology</h3>
+          <p class="program-card-desc">Medical equipment technician, radiology technician, pharmaceutical chemistry, and Montessori education diplomas — meeting the growing demand for paramedical and allied health professionals across Pakistan.</p>
+        </div>
+      </div>
+
+      <!-- 12. Business, Management & Social Development -->
+      <div class="program-card">
+        <img
+          class="program-card-img"
+          src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Business Management & Social Development"
+          loading="lazy"
+        />
+        <div class="program-card-body">
+          <span class="program-card-tag">Business</span>
+          <h3 class="program-card-title">Business, Management &amp; Social Development</h3>
+          <p class="program-card-desc">Programs in project planning, ERP/material management, transport management, hospitality, social mobilization, life insurance, and business communication — developing Pakistan's next generation of professional managers.</p>
+        </div>
+      </div>
+
+    </div><!-- /programs-grid -->
+
+    <!-- Verification CTA Banner -->
+    <div style="margin-top:60px; background:linear-gradient(135deg,var(--green-dark) 0%,var(--green-mid) 100%); border-radius:var(--radius-lg); padding:44px 40px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px; border:1px solid var(--green-light); box-shadow:var(--shadow-lg);">
+      <div>
+        <p style="font-size:0.75rem;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold-light);margin-bottom:8px;">Credential Verification</p>
+        <h3 style="font-family:var(--font-display);font-size:1.6rem;font-weight:900;color:var(--white);margin-bottom:8px;line-height:1.25;">Verify Any BSTE Certificate<br/>Instantly Online</h3>
+        <p style="font-size:0.88rem;color:rgba(255,255,255,0.72);max-width:420px;">Enter the roll number and passing year to instantly verify the authenticity of any BSTE-issued certificate or diploma.</p>
+      </div>
+      <a href="verification.html" class="btn-primary" style="font-size:1rem;padding:16px 36px;white-space:nowrap;">🔍 Go to Verification</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ FOOTER / ABOUT US -->
+<footer class="footer" id="about-us">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="nav-logo" style="margin-bottom:16px;">
+        <div class="nav-logo-icon">B</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-title">BSTE</span>
+          <span class="nav-logo-sub">Pakistan</span>
+        </div>
+      </div>
+      <p>The Board of Science &amp; Technology Education (BSTE) is Pakistan's authoritative body for standardizing technical and scientific curricula, issuing recognized credentials, and accrediting vocational training institutes across the country. BSTE bridges the gap between industry demand and skilled human capital through internationally benchmarked programs.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#academic-scope">Academic Scope</a></li>
+        <li><a href="verification.html">Certificate Verification</a></li>
+        <li><a href="#about-us">About BSTE</a></li>
+        <li><a href="#academic-scope">Programs</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Programs</h4>
+      <ul>
+        <li><a href="#academic-scope">Civil Engineering</a></li>
+        <li><a href="#academic-scope">IT &amp; Computing</a></li>
+        <li><a href="#academic-scope">Electrical Technology</a></li>
+        <li><a href="#academic-scope">Telecommunications</a></li>
+        <li><a href="#academic-scope">Healthcare Technology</a></li>
+        <li><a href="#academic-scope">Business Management</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon">📍</div>
+        <div class="footer-contact-text">Board of Science &amp; Technology Education, Pakistan</div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon">✉️</div>
+        <div class="footer-contact-text">info.bste.com.pk</div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon">🌐</div>
+        <div class="footer-contact-text">www.bste.com.pk</div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon">🏛️</div>
+        <div class="footer-contact-text">Accreditation &amp; Examinations Division — Pakistan</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Board of Science &amp; Technology Education (BSTE) — Pakistan. All rights reserved.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="verification.html">Verify Certificate</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('navLinks').classList.remove('open');
+  }
+</script>
+
+</body>
+</html>
