@@ -325,7 +325,7 @@
 
   /* ── Download PDF from GitHub Students folder ── */
   function downloadPDF() {
-    const pdfUrl = githubRaw(`students/${roll}.pdf`);
+    const pdfUrl = githubRaw(`Students/${roll}.pdf`);
     const a = document.createElement('a');
     a.href = pdfUrl;
     a.download = `BSTE_Certificate_${roll}.pdf`;
